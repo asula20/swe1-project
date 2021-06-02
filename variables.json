@@ -1,0 +1,79 @@
+{
+  "question": [
+    "Q1.What is a variable?",
+    "Q2. What symbol is used in python to assign values to a variable?",
+    "Q3. What is wrong with the variable name 1st_Name?",
+    "Q4. What will this statement print? print('Hello, your name is'+name)",
+    "Q5. Output of print(f\"Python {3 + .2}\") ",
+    "Q6. What is the maximum possible length of an identifier or an attribute?",
+    "Q7. All keywords available in Python are in:",
+    "Q8. Which of the following cannot be a variable?",
+    "Q9. Which of the following is an invalid statement? ",
+    "Q10.Which of the following statements assigns the value 100 to the variable x in Python:"
+  ],
+  "answer": [
+    3,
+    4,
+    3,
+    3,
+    4,
+    3,
+    4,
+    2,
+    3,
+    1
+  ],
+  "options": [
+
+    ["A number",
+      "A message input by the user",
+      "A location in memory that we use to store data",
+      "A printout that show answer that user entered."
+    ],
+    ["*",
+      "==",
+      ":",
+      "="
+    ],
+    ["No special characters other than underscore",
+      "Keep names meaningful",
+      "Only use text for the start of the variable name",
+      "There is nothing wrong with this variable name"
+    ],
+    ["name",
+      "print",
+      "hello, your name is",
+      "There is no variable in this script"
+    ],
+     ["3.2",
+      "3+.2",
+      "Shows Error",
+      "Python 3.2"
+    ],
+    ["32",
+      "64",
+      "Any length",
+      "73"
+    ],
+    ["Uppercase",
+      "Lowercase",
+      "CamelCase",
+     "Both uppercase and lowercase"
+    ],
+    ["__init__",
+      "in",
+      "it",
+      "on"
+    ],
+    ["a_b_c = 100",
+      "abc = 100, 'python'",
+      "a b c = 1 00",
+      "a, b, c = 1, 0, 0"
+    ],
+    ["x = 100",
+      "x := 100",
+      "x << 100",
+      "let x = 100"
+    ]
+  ]
+}

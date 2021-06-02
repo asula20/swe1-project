@@ -1,0 +1,79 @@
+{
+  "question": [
+    "Q1.In a Python program, a control structure:",
+    "Q2. What signifies the end of a statement block or suite in Python?",
+    "Q3. Which of the following is not a boolean expression?",
+    "Q4. True is what type of variable?",
+    "Q5. Which one of the following is a valid Python if statement :",
+    "Q6. What keyword would you use to add an alternative condition to an if statement?",
+    "Q7. Can we write if/else into one line in python?",
+    "Q8. In a Python program, a control structure:",
+    "Q9.'p' + 'q' if '12'.isdigit() else 'r' + 's'",
+    "Q10.Which statement will check if a is equal to b?"
+  ],
+  "answer": [
+    1,
+    3,
+    3,
+    3,
+    1,
+    3,
+    1,
+    2,
+    1,
+    2
+  ],
+  "options": [
+
+    ["Directs the order of execution of statements execution",
+      "Manages the input and output of control characters",
+      "Defines program-specific data structures",
+      "Dictates what happens before the program starts"
+    ],
+    ["end",
+      "comment",
+      "A line that is indented less than the previous line",
+      "}"
+    ],
+    ["True",
+      "3==4",
+      "3+4",
+      "3+4==7"
+    ],
+    ["float",
+      "string",
+      "boolean",
+      "integer"
+    ],
+     ["if a>=2 :",
+      "if (a >= 2)",
+      "if (a => 22)",
+      "if a >= 22"
+    ],
+    [" else if",
+      " elseif",
+      "elif",
+      "None of the above"
+    ],
+    ["Yes",
+      "No",
+      "if/else not used in python",
+     "None of the above"
+    ],
+    [" Defines program-specific data structures",
+      "Directs the order of execution of the statements",
+      "Dictates what happens before the program starts",
+      "None of the above"
+    ],
+    ["pq",
+      "rs",
+      "pqrs",
+      "pq12"
+    ],
+    ["if a = b:",
+      "if a == b:",
+      "if a === c:",
+      "if a == b"
+    ]
+  ]
+}
