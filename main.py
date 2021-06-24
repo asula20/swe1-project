@@ -1,7 +1,7 @@
 from tkinter import *
 from sys import *
 import os
-
+import json
 
 def openGameTab():
     os.system('python games.py')
@@ -13,9 +13,23 @@ def openHomeTab():
 def openQuzzesTab():
     os.system('python quizzes.py')
 
+def openForumTab():
+    os.system('python forum.py')
+progress=0
+def clickBtn():
+   global progress
+   progress = progress + 17
+   if progress>100:
+       progress=100
+
+   canvas.itemconfigure(a, text=str(progress)+ " %")
+
 root = Tk()
 root.title('Learn Python')
 root.geometry("1645x928")
+
+with open('did_u_know.json') as f:
+    data = json.load(f)
 
 # Defining the image
 background = PhotoImage(file="images/bg.png")
@@ -47,13 +61,15 @@ c6_img=PhotoImage(file="images/chapter6.png")
 button_home= Button(root,image =home_btn, text="Home",command= openHomeTab)
 button_games= Button(root,image=games_btn, text="Games", command= openGameTab)
 button_quizzes= Button(root,image=quizzes_btn, text="Quizzes",command=openQuzzesTab)
-button_forum= Button(root,image=forum_btn, text="Forum")
-button_c1= Button(root,image=c1_img,borderwidth=0)
-button_c2= Button(root,image=c2_img,borderwidth=0)
-button_c3= Button(root,image=c3_img,borderwidth=0)
-button_c4= Button(root,image=c4_img,borderwidth=0)
-button_c5= Button(root,image=c5_img,borderwidth=0)
-button_c6= Button(root,image=c6_img,borderwidth=0)
+button_forum= Button(root,image=forum_btn, text="Forum",command=openForumTab)
+
+button_c1= Button(root,image=c1_img,borderwidth=0, command=clickBtn)
+
+button_c2= Button(root,image=c2_img,borderwidth=0,command=clickBtn)
+button_c3= Button(root,image=c3_img,borderwidth=0,command=clickBtn)
+button_c4= Button(root,image=c4_img,borderwidth=0,command=clickBtn)
+button_c5= Button(root,image=c5_img,borderwidth=0,command=clickBtn)
+button_c6= Button(root,image=c6_img,borderwidth=0,command=clickBtn)
 
 
 #Adding Lable texts
@@ -63,10 +79,11 @@ canvas.create_text(1168,340,text="Conditional Logic",font=("Sans Serif",24), fil
 canvas.create_text(1118,630,text="Variables",font=("Sans Serif",24), fill="white")
 canvas.create_text(342,340,text="Expressions",font=("Sans Serif",24), fill="white")
 canvas.create_text(285,630,text="Loops and Patterns",font=("Sans Serif",24), fill="white")
+canvas.create_text(1470,620,text="Guido van Rossum was looking for\n an interesting project to keep\n him occupied during Christmas\n so he created Python.",font=("Sans Serif",14), fill="black")
 
-progress=100.0
-progress_txt= str(progress)
-canvas.create_text(740,500,text=progress_txt+ "%",font=("Sans Serif",64), fill="gray")
+
+progress_txt= "0 %"
+a= canvas.create_text(740,500,text=progress_txt,font=("Sans Serif",64), fill="gray")
 
 
 #Adding windows for the menu buttons
@@ -78,7 +95,7 @@ bf_window= canvas.create_window(1084,-6, anchor="nw", window=button_forum)
 c1_window= canvas.create_window(685,140, anchor="nw", window=button_c1)
 c2_window= canvas.create_window(436,290, anchor="nw", window=button_c2)
 c3_window= canvas.create_window(940,290, anchor="nw", window=button_c3)
-c4_window= canvas.create_window(436,580, anchor="nw", window=button_c4)
+c4_window= canvas.create_window(453,587, anchor="nw", window=button_c4)
 c5_window= canvas.create_window(940,580, anchor="nw", window=button_c5)
 c6_window= canvas.create_window(685,706, anchor="nw", window=button_c6)
 
